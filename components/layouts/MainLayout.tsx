@@ -1,5 +1,6 @@
 import { FC } from "react";
 import Head from "next/head";
+import { Navbar } from "../ui";
 
 interface Props {
   children: JSX.Element;
@@ -18,7 +19,7 @@ export const MainLayout: FC<Props> = ({ children }) => {
         />
       </Head>
 
-      {/* Navbar */}
+      <Navbar />
 
       <main>{children}</main>
     </>
