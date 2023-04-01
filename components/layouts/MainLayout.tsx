@@ -11,17 +11,14 @@ export const MainLayout: FC<Props> = ({ children }) => {
   return (
     <>
       <Head>
-        <title>"Oscar Ariel Saucedo"</title>
+        <title>Oscar Ariel Saucedo</title>
         <meta name='author' content='Oscar Ariel Saucedo' />
-        <meta
-          name='keywords'
-          content={`Oscar Ariel Saucedo, developer, react`}
-        />
+        <meta name='keywords' content={`Oscar Ariel Saucedo, developer, react`} />
       </Head>
 
       <Navbar />
 
-      <main>{children}</main>
+      <main style={{ margin: "0px 100px" }}>{children}</main>
     </>
   );
 };
